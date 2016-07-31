@@ -235,19 +235,19 @@ var view = {
     //var currentTile = document.getElementById(tile);
     switch (tile) {
       case "green":
-      audio.beep(speed-50, 415, 0.6, 0.05, "sine");
+      audio.beep(speed-50, 391.995, 0.6, 0.05, "sine");
       // audio.green.play();
       break;
       case "red":
-      audio.beep(speed-50, 310, 0.6, 0.05, "sine");
+      audio.beep(speed-50, 329.628, 0.6, 0.05, "sine");
       // audio.red.play();
       break;
       case "blue":
-      audio.beep(speed-50, 209, 0.6, 0.05, "sine");
+      audio.beep(speed-50, 195.998, 0.6, 0.05, "sine");
       // audio.blue.play();
       break;
       case "yellow":
-      audio.beep(speed-50, 252, 0.6, 0.05, "sine");
+      audio.beep(speed-50, 261.626, 0.6, 0.05, "sine");
       // audio.yellow.play();
       break;
     }
@@ -268,6 +268,7 @@ var view = {
 var audio = {
   AudioContext : window.AudioContext || window.webkitAudioContext,
   audioCtx: new AudioContext(),
+	volume: 0.6,
   //Beep function courtesy of http://stackoverflow.com/a/29641185/6230785
   //All arguments are optional:
   //duration of the tone in milliseconds.
