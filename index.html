@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="wrapper col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-6">
+        <div id="green" class="circle greenCircle" data-circle="1"></div>
+        <div id="red" class="circle redCircle" data-circle="2"></div>
+        <div id="blue" class="circle blueCircle" data-circle="3"></div>
+        <div id="yellow" class="circle yellowCircle" data-circle="4"></div>
+        <div class="controls">
+          <h1 class="title">Simon<sup class="fa fa-registered" aria-hidden="true"></sup></h1>
+          <h3 class="count">COUNT</h3>
+          <div id="counter" class="counter"></div>
+          <h3 id="startTag" class="start">START</h3>
+          <button id="start" class="startBtn btn btn-primary"type="button" name="start"></button>
+          <h3 class="strict">STRICT</h3>
+          <button id="strict" class="strictBtn btn btn-primary" type="button" name="strict"></button>
+          <!-- Rectangular switch -->
+          <h3 class="on">ON</h3>
+          <h3 class="off">OFF</h3>
+            <div class="onOff">
+            <label class="switch">
+              <input id="onSwitch" type="checkbox">
+              <div class="slider"></div>
+            </label>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="simon.js"></script>
+</body>
+</html>
