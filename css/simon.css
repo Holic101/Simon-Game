@@ -1,0 +1,239 @@
+/* Basic Reset */
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+
+   /* Disable mouse selection */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+ }
+/* Basic styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+h1 {
+  font-size: 2.0em;
+}
+h3 {
+  font-size: 0.6em;
+}
+.wrapper {
+  height: 450px;
+  width: 450px;
+}
+/* Quarter Circles */
+.container-fluid {
+  position:relative;
+  margin-top: 150px;
+}
+.circle {
+  position: absolute;
+  border: 14px solid black;
+  cursor: pointer;
+}
+.blueCircle {
+  top: 150px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+  background: #094a8f;
+  border-radius: 0 0 100px 0;
+  -moz-border-radius: 0 0 100px 0;
+  -webkit-border-radius: 0 0 100px 0;
+}
+.yellowCircle {
+  top: 150px;
+  left: 30px;
+  width: 200px;
+  height: 200px;
+  background: #cca707;
+  border-radius: 0 0 0 100px;
+  -moz-border-radius: 0 0 0 100px;
+  -webkit-border-radius: 0 0 0 100px;
+}
+.greenCircle {
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  height: 200px;
+  background: #00a74a;
+  border-radius: 100px 0 0 0;
+  -moz-border-radius: 100px 0 0 0;
+  -webkit-border-radius: 100px 0 0 0;
+}
+.redCircle {
+  top: 30px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+  background: #9f0f17;
+  border-radius: 0 100px 0 0;
+  -moz-border-radius: 0 100px 0 0;
+  -webkit-border-radius: 0 100px 0 0;
+}
+#yellow.light{
+  background-color : #fed93f;
+}
+
+#blue.light{
+  background-color : #1c8cff;
+}
+
+#red.light{
+  background-color : #ff4c4c;
+}
+
+#green.light{
+  background-color : #13ff7c;
+}
+/*On/Off Switch Slider*/
+/* The switch - the box around the slider */
+
+.onOff {
+  position: absolute;
+  top:125px;
+  left: 58px;
+}
+.on {
+  position: absolute;
+  top: 130px;
+  left: 96px;
+  font-weight: 900;
+}
+.off {
+  position: absolute;
+  top: 130px;
+  left: 35px;
+  font-weight: 900;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+/* CONTROL PANEL */
+.controls {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  background-color: #ddd;
+  border: 1px solid black;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.title {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.startBtn {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.start {
+  position: absolute;
+  top: 112px;
+  left: 69px;
+}
+.strictBtn {
+  position: absolute;
+  top: 80px;
+  left: 110px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.strict {
+  position: absolute;
+  top: 112px;
+  left: 108px;
+}
+.counter {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  width: 40px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+}
+.count {
+  position: absolute;
+  top: 112px;
+  left: 8px;
+}
